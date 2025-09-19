@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarrukhAdvanture - Your Adventure Awaits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="logo">FarrukhAdvanture</h1>
+    
+        <ul class="nav-links">
+           
+            <li><a href="#hiking">Hiking</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#adventures">Adventures</a></li>
+            <li><a href="#contact" class="ctn">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header with Quote -->
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+         
+            <a href="#" class="ctn" id="learnMoreBtn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Destination Section -->
+    <section class="destinations">
+        <div class="title">
+            <h1>Popular Destinations</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <!-- Destination 1 -->
+            <div class="col">
+                <img src="https://i.postimg.cc/6qmMJ0Vj/475060394-2942260092610580-8216939064304839954-n.jpg" alt="mountais vibe">
+                <h4>Mountain Summit Trail</h4>
+                <p>Click the image to see what you'll find on this challenging and rewarding hike.</p>
+                <button class="ctn info-btn" data-destination="mountain">See The Journey</button>
+            </div>
+            <!-- Destination 2 -->
+            <div class="col">
+                <img src="https://i.postimg.cc/Y9y6hS4j/487279158-3002730679896854-7426977236816069985-n.jpg" alt="Culture Explorer & Walk">
+                <h4>Culture Explorer & Walk</h4>
+                <p>A peaceful walk through ancient village. Discover the secrets along the path.</p>
+                <button class="ctn info-btn" data-destination="forest">See The Journey</button>
+            </div>
+        </div>
+    </section>
+  
+   <!-- Learn More Modal -->
+    <div id="learnMoreModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLearnMore">&times;</span>
+            <h2 class="modal-title">About FarrukhAdvanture</h2>
+            <p class="modal-text">Welcome to FarrukhAdvanture, your premier guide to unforgettable experiences in nature's most breathtaking locations. We specialize in creating personalized adventure packages that cater to all experience levels, from beginners to seasoned adventurers.</p>
+            
+            <p class="modal-text">Our mission is to connect people with the natural world while promoting sustainable tourism practices. We believe that adventure should be accessible to everyone while preserving the beauty of our destinations for future generations.</p>
+            
+            <h3 class="modal-title">What We Offer</h3>
+            <ul class="modal-list">
+                <li>Guided hiking tours to majestic mountain peaks</li>
+                <li>Cultural immersion experiences in remote villages</li>
+                <li>Wildlife spotting expeditions with expert guides</li>
+                <li>Photography workshops in scenic locations</li>
+                <li>Custom adventure packages for groups and individuals</li>
+            </ul>
+            
+            <p class="modal-text">All our guides are certified professionals with extensive knowledge of local ecosystems, cultures, and safety protocols. We provide all necessary equipment and ensure that every adventure is both thrilling and safe.</p>
+            
+            <a href="#contact" class="ctn" style="margin-top: 20px;">Plan Your Adventure</a>
+        </div>
+    </div>
+
+    <!-- Journey Modal -->
+    <div id="journeyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeJourney">&times;</span>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-text" id="modalText"></p>
+            <ul class="modal-list" id="modalList"></ul>
+        </div>
+    </div>
+
+    <!-- The Modal/Popup -->
+    <div class="modal" id="info-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Journey Details</h2>
+            <div class="modal-line"></div>
+            <p id="modal-text">Here's what you'll find along the way...</p>
+            <ul id="modal-list"></ul>
+            <p id="modal-safety"><strong>In Trouble?</strong> The park ranger station is marked on your map. Carry water and a whistle.</p>
+        </div>
+    </div>
+
+    <!-- Footer with Contact Form -->
+    <section class="footer" id="contact">
+        <p>17  Goldwing Lane, London, SE16 2DM | Phone: 07676588767 | Email: info@farrukhadvanture.com</p>
+        <p>Need a guide? Send us a message!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Tell us about your trip (e.g., I need a driver for a tour on May 5th)" required></textarea>
+            <button type="submit" class="ctn">Send Message</button>
+        </form>
+        <p>©️ 2026 Farrukh Adventures. All rights reserved.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
