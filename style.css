@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+*{
+   
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgbo(0,0,0.2);
+
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+ color: #fff;
+  
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover, .ctn:hover {
+    background-color: #4a90e2;
+}
+
+.ctn {
+    padding: 0.5rem 1rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.postimg.cc/s1FZh6pZ/IMG-3904.avif=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 60px; /* To offset fixed nav */
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: #4a90e2;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 5% 10%;
+    text-align: center;
+}
+.title {
+    margin-bottom: 4rem;
+}
+.title h1 {
+    font-size: 3vmin;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.col {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
+}
+.col img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.col img:hover {
+    transform: scale(1.05);
+}
+.col h4 {
+    font-size: 2vmin;
+    margin: 20px 0;
+}
+.col p {
+    color: #7c7c7c;
+    margin-bottom: 1rem;
+}
+
+/* The Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation: modalopen 0.5s;
+}
+@keyframes modalopen {
+    from {opacity: 0; transform: translateY(-60px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color: #000;
+}
+.modal-line {
+    width: 100px;
+    height: 3px;
+    background: #4a90e2;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+#modal-list {
+    text-align: left;
+    margin: 1rem 0 1rem 2rem;
+}
+#modal-safety {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fff4e6;
+    border-left: 4px solid #ffa94d;
+    border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+    padding: 3% 10%;
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+.contact-form input, .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+}
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
